@@ -1,3 +1,6 @@
+import groupingtask.GroupingUtil;
+import groupingtask.User;
+
 void main() {
     List<User> users = List.of(
             new User("Vlad", 21, "TBank", "Minsk"),
