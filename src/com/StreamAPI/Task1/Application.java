@@ -3,7 +3,6 @@ package com.StreamAPI.Task1;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Stream;
 
 public class Application {
     void main(){
