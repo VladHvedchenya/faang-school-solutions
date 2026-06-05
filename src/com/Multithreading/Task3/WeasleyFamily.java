@@ -24,10 +24,12 @@ public class WeasleyFamily {
         try{
             if(!executor.awaitTermination(10, TimeUnit.MINUTES)){
                 System.err.println("Уизли не успели сделать уборку вовремя!");
+                executor.shutdownNow();
             }
         }
         catch (InterruptedException e){
             System.err.println("Главный поток прерван");
+            executor.shutdownNow();
             Thread.currentThread().interrupt();
         }
 
