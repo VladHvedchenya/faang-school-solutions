@@ -1,4 +1,4 @@
-package registrationTask;
+package com.RegistrationTask;
 
 import java.util.Objects;
 

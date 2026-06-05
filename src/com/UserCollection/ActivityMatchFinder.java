@@ -1,4 +1,4 @@
-package UserCollection;
+package com.UserCollection;
 
 import java.util.HashMap;
 import java.util.List;

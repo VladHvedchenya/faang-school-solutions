@@ -1,4 +1,4 @@
-package units;
+package com.RPGTask.units;
 
 public abstract class Character {
     private final String name;
