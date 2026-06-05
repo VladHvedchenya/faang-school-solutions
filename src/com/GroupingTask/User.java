@@ -1,4 +1,4 @@
-package groupingtask;
+package com.GroupingTask;
 
 public class User {
     private final String name;

@@ -1,4 +1,4 @@
-package registrationTask;
+package com.RegistrationTask;
 
 public final class ConstantUtil {
     public enum Jobs{

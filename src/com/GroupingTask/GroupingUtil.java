@@ -1,4 +1,4 @@
-package groupingtask;
+package com.GroupingTask;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,5 +1,5 @@
-import groupingtask.GroupingUtil;
-import groupingtask.User;
+import com.GroupingTask.GroupingUtil;
+import com.GroupingTask.User;
 
 void main() {
     List<User> users = List.of(

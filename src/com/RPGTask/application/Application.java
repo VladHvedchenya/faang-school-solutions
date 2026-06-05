@@ -1,7 +1,7 @@
-package application;
+package com.RPGTask.application;
 
-import units.Archer;
-import units.Warrior;
+import com.RPGTask.units.Archer;
+import com.RPGTask.units.Warrior;
 
 public class Application {
     void main(){
