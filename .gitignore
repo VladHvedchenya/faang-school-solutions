@@ -2,6 +2,7 @@
 *.class
 
 # IntelliJ IDEA
+.gradle/
 .idea/
 *.iws
 *.iml
