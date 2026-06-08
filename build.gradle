@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.faang.school'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral() // Поиск библиотек в центральном репозитории мира
+}
+
+dependencies {
+    // Библиотека Google Guava со всеми зависимостями
+    implementation 'com.google.guava:guava:33.0.0-jre'
+
+    // JUnit 5 для тестов
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(JavaExec).configureEach {
+    jvmArgs("-Dfile.encoding=UTF-8", "-Dstdout.encoding=UTF-8", "-Dstderr.encoding=UTF-8")
+}
