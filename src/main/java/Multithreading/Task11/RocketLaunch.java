@@ -22,20 +22,17 @@ public class RocketLaunch implements Runnable {
 
     @Override
     public void run() {
-        // Фиксируем реальный момент времени, когда ОДИН поток физически смог зайти в этот метод
         long currentSystemTime = System.currentTimeMillis();
 
-        // Считаем, сколько мс прошло от НАЧАЛА работы всей программы
         long msSinceStart = currentSystemTime - programStartTime;
 
-        // Считаем задержку: насколько позже ракета стартовала относительно своего идеального плана
         long delay = msSinceStart - launchTime;
 
         System.out.printf("[ПОТОК: %s] 🚀 Ракета %s ПОЛУЧИЛА поток на %d мс от старта (План: %d мс). Задержка из-за очереди: %d мс.%n",
                 Thread.currentThread().getName(), name, msSinceStart, launchTime, delay);
 
         try {
-            Thread.sleep(1000); // Имитация взлета (занимает поток на 1 секунду)
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
             System.out.println("Поток был прерван!");
