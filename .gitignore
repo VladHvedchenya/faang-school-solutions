@@ -8,6 +8,11 @@
 *.iml
 *.ipr
 
+# Gradle compilation cache & temp files
+build/
+tmp/
+stash-dir/
+
 # Log file
 *.log
 
